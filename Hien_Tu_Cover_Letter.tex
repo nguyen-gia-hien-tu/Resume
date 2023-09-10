@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75,top=1.25cm,bottom=0.5cm,left=1cm,right=1cm]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+% Expand the width for \phone, \email, \linkedin, \github to be on one line
+\patchcmd{\makehead}% <cmd>
+  {0.8\textwidth}% <search>
+  {\linewidth}% <replace>
+  {}{}% <success><failure>
+
+\usepackage{ragged2e}
+
+\nopagenumbers{}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Hien} % Your first name
+\familyname{Tu} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+% \title{Curriculum Vitae}
+% \address{123 Broadway}{City, State 12345}
+\mobile{(365) 888 5087}
+% \phone{(000) 111 1112}
+% \fax{(000) 111 1113}
+\email{tun1@mcmaster.ca}
+\social[linkedin]{nguyen-gia-hien-tu}
+\social[github]{nguyen-gia-hien-tu}  
+
+% \homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+% \extrainfo{additional information}
+% \photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+% \quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\recipient{\vspace{-2.0em} HR Department}{Company Name\\Company Address\\City, State}
+\vspace{-1.0em}
+\date{\today} % Letter date
+\opening{Dear Hiring Team,} % Opening greeting
+\closing{Sincerely,} % Closing phrase
+% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+
+\makelettertitle % Print letter title
+
+\justifying
+
+Innovation is a crucial quality that a company requires to accelerate in the continuously developing world. In addition to my interest in innovation, having studied for a while, I would like to apply what I have learned to practice. Given the mentioned reasons, I am writing to express my interest in the \textbf{12-month} position of \textbf{Data Scientist Co-op} at \textbf{AMD}, posted on the McMaster Engineering Co-op and Career Services website.
+
+I am currently enrolled in my \textbf{third year} of the \textbf{Computer Science Co-op} program. Throughout my academic career, I have maintained a \textbf{CGPA} of \textbf{4/4} and am currently on The Deans' Honour List. Throughout the courses, I have learned multiple programming languages including \textbf{Haskell}, \textbf{Python}, \textbf{Java} and got an introduction to web development using \textbf{HTML}, \textbf{CSS}, \textbf{JS} with \textbf{Django} framework. Furthermore, through several labs and assignments, I have developed my testing and debugging skills with \textbf{Pytest} and \textbf{JUnit}. Moreover, I have enhanced my clean-code writing skill using \textbf{Pylint} and documenting skills using \textbf{Doxygen}.
+
+In addition to my education, I have improved and gained some valuable skills by creating a logic puzzle game using Java. Through the process of building the project, I have developed my self-learning skills to learn the \textbf{Java Swing} framework to create the GUI and to use Launch4j to export the game into a Windows executable file. In conjunction with self-learning, I have learned to integrate my in-class knowledge on Java into practice through the project. Furthermore, I have enhanced my critical thing and problem solving skills as the game not only requires programming skills but mathematical knowledge is also needed. To clarify, knowledge on linear algebra, especially, on matrices and reduced row echelon, as well as the ability to implement it in Java are crucial to solve the puzzle.
+
+Aside from my technical background, I have also developed essential soft skills as an \textbf{undergraduate teaching assistant} at McMaster University. I have developed my \textbf{communication skills} through conducting weekly tutorials and office hours to assist the students with their knowledge in a functional programming language named Haskell. Additionally, carrying the teaching assistant job while maintaining good standings in 5 courses has further improved my \textbf{time management skills} as well as \textbf{organization skills}. These skills were further strengthened through attending weekly meetings with the professor to report current progress and discuss future work.
+
+In addition, as a member of the \textbf{McMaster Start Coding} club, I enhanced my teamwork and communication skills by collaborating in a group of four, including two kids and two mentors, to create a game promoting Covid-19 awareness using the club's online tool based on \textbf{Elm} at the beginning of the pandemic. As the leader of the team, I have exhibited my \textbf{leadership skills} by assigning tasks to the members where the kids would draw the figures while the other mentor and I were responsible for the mechanism of the game. During the work, I constantly checked the progress and provided support for the kids when needed.
+
+With my skills and abilities, I am confident that I will be suitable for the position. I would appreciate the opportunity to meet and further discuss my qualifications. Please contact me at \textbf{(365) 888 5087} or at \href{mailto:tun1@mcmaster.ca}{tun1@mcmaster.ca} to arrange an interview at your earliest convenience. Thank you for your time and consideration. \\
+
+Sincerely, \\
+\textbf{Hien Tu}
+
+% \makeletterclosing % Print letter signature
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
