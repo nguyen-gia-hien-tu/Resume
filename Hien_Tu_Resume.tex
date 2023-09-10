@@ -1,0 +1,274 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}%
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{multicol}
+% adjust the page margins
+\usepackage[scale=0.75,top=0.5cm,bottom=0.5cm,left=1cm,right=1cm]{geometry}
+% Expand the width for \phone, \email, \linkedin, \github to be on one line
+\patchcmd{\makehead}% <cmd>
+  {0.8\textwidth}% <search>
+  {\linewidth}% <replace>
+  {}{}% <success><failure>
+% \usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{xpatch}
+\xpatchcmd\cventry{,}{}{}{}
+
+% section font package
+
+
+% personal data
+\name{Hien}{Tu}                               % optional, remove / comment the line if not wanted
+% \address{70 Absolute Ave.}{L4Z 0A4 Mississauga}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\vspace*{3mm}
+\phone[mobile]{(365)~888~5087}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{tun1@mcmaster.ca}                             % optional, remove / comment the line if not wanted
+% \homepage{linkedin.com/in/nguyen-gia-hien-tu}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{nguyen-gia-hien-tu}
+\social[github]{nguyen-gia-hien-tu}
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+% \vspace*{-0.5em}
+\makecvtitle
+
+
+\vspace*{-3.75em}
+\section{Education}
+\cventry{}{}{Bachelor of Applied Science, Honours Computer Science Co-op}{September 2019 -- April 2023}{}{\vspace{-1.5em} {McMaster University, Hamilton ON}}{
+\vspace{-0.75em}
+\begin{small}
+\begin{itemize}
+    \item Currently enrolled in \textbf{level 3} of the \textbf{4-year} program with a cummulative \textbf{GPA} of \textbf{4.0} on a 4.0 scale
+    \item Received the McMaster Start Coding's Honorarium for volunteering more than 40 hours with the organization
+    \item Awarded the McMaster President's Entrance Award for achieving an average over 95\% in high school
+    \item Rewarded the Outstanding Book Award for a well-written academic paper during a Model United Nations (MUN) conference in high school
+\end{itemize}
+\end{small}
+
+
+\vspace{0.25em}
+{\textbf{Related Coursework:}}
+\vspace{-1.0em}
+\begin{small}
+ \begin{multicols}{3}
+    \begin{itemize}
+        \item Introduction to Programming \textbf{- Python}
+        \item Principle of Programming \textbf{- Java}
+        \item Databases - \textbf{DB2}
+        \item Introduction to Software Development
+        \item Discrete Math with Applications \textbf{(A+)}
+        \item Data Structures and Algorithms \textbf{(A+)}
+    \end{itemize}
+ \end{multicols}
+\end{small}
+}
+
+% \cventry{}{}{Columbia International College}{September 2018 -- May 2019}{\hspace*{-2.5 mm} Ontario Secondary School Diploma}{}
+
+% \vspace*{2.5mm}
+% \vspace{-1.0em}
+% \begin{small}
+%     \begin{itemize}
+%         \item Graduated with an average of 96\%
+%     \end{itemize}
+% \end{small}
+
+
+\vspace{-2.0em}
+%%%%%%%%%% Skills %%%%%%%%%%
+\section{Skills}
+\begin{small}
+Programming Language: Python, Java, Bash, Haskell, Javascript \\
+Software: Git, Pylint, Pytest, JUnit, Doxygen, Django, HTML, CSS \\
+Other: Word, Excel, Powerpoint
+\end{small}
+
+
+\vspace{-1.0em}
+%%%%% Experience %%%%%
+\section{Experience}
+
+\cventry{}{}{Undergraduate Teaching Assistant}{September 2021 -- December 2021}{\hspace*{-2.5 mm} Introduction to Computational Thinking}{
+% Detailed achievements:%
+\begin{itemize}
+\item Developed organization skills by preparing and conducting tutorials to assist students with their knowledge in \textbf{Haskell}
+\item Enhanced communication skills through consulting students on the course material using various communication channels, including emails and weekly office hours
+\item Conducted marking and provided feedback on student assignments, with approximately 200 submissions graded
+\item Exhibited time management skills by attending weekly meetings with the instructor to report current progress and discuss future work
+\end{itemize}
+}
+
+
+\vspace{-1.0em}
+%%%%%%%%%% Projects %%%%%%%%%%
+\section{Projects}
+\cventry{}{}{\href{https://github.com/nguyen-gia-hien-tu/DDO_Vale_Puzzle}{DDO Vale Puzzle}}{July 2021 \vspace{-1.0em}}{}{
+\begin{itemize}
+    \item Developed a logic puzzle game with a variety of board sizes from 3x3 to 9x9 using \textbf{Java}, \textbf{Swing} and \textbf{Launch4j}
+    \item Applied programming knowledge learned in class and self-educated knowledge to create the game
+    \item Improved knowledge on Object-Oriented Programming concept and problem solving skills after building the game
+\end{itemize}
+}
+
+\cventry{}{}{\href{https://github.com/nguyen-gia-hien-tu/Sorting-Visualizer}{Sorting Visualizer}}{February 2021 \vspace{-1.0em}}{}{
+\begin{itemize}
+    \item Designed a visualizer to visualize different sorting \textbf{algorithms} using \textbf{Python}
+    \item Utilized in-class knowledge in Python and algorithms as well as self-taught knowledge in \textbf{Pygame} and \textbf{PyInstall} to program and export the visualizer
+\end{itemize}
+}
+
+\cventry{}{}{\href{https://macoutreach.rocks/share/14769912}{Covid-19 Awareness Game}}{March 2020 \vspace{-1.0em}}{}{
+\begin{itemize}
+    \item Collaborated in a group of 4 in McMaster Start Coding club to create a game to help raising the awareness of Covid-19
+    \item Built the game using the club website's tool, which is based on \textbf{Elm}
+\end{itemize}
+}
+
+
+\vspace{-0.75em}
+%%%%% Extracurricular Activities %%%%%
+\section{Extracurricular Activities}
+
+\cventry{}{}{Simple Type Theory - Volunteering Research Assistant}{May 2021 -- August 2021 \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Assisted professor in developing the Simple Type Theory textbook
+\item Improved critical and logical thinking through researching exercises, and discovered typographical and logical errors in the textbook
+\item Tested \LaTeX \, macros and environments for writing expressions and theories in the textbook
+\end{itemize}}
+% \vspace{1.0em}
+
+\cventry{}{}{McMaster Start Coding - Volunteer and Facilitator}{September 2019 -- December 2021 \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Visited schools and introduce children of different ages to Computer Science concept
+\item Taught children design thinking and programming to create pictures and games with an Elm-based tool
+\end{itemize}}
+% \vspace{1.0em}
+
+\cventry{}{}{Professional Development Committee – Member}{September 2019 -- December 2019 \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Advanced organization skills by assisting in setting up LinkedIn photoshoot night
+\item Demonstrated communication skills through discussions on organizing the Carnival Event for McMaster Faculty of Engineering
+\item Volunteered in setting up the Engineering Event of the McMaster Faculty of Engineering
+\end{itemize}}
+% \vspace{1.0em}
+
+% \cventry{}{}{Model United Nations – General Delegate}{October 2018 -- April 2019 \vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% \begin{itemize}
+% \item Represented Demark in high school Model UN’s conference and Estonia in the CWMUN 2019
+% \item Debated on topics of the world issues including peaceful uses of outer space, ending hunger and poverty, youth employment in Africa
+% \end{itemize}}
+
+
+% \vspace{-0.75em}
+%%%%%%%%%% Awards %%%%%%%%%%%
+% \section{Awards}
+
+% \cventry{}{}{McMaster Start Coding’s Honorarium}{April 2020\vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% \begin{itemize}
+% \item Received for volunteering more than 40 hours with the organization
+% \end{itemize}}
+
+% \cventry{}{}{McMaster President’s Entrance Award}{September 2019 \vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% \begin{itemize}
+% \item Awarded for enrolling with an average of 95\% and above
+% \end{itemize}}
+% % \vspace{-1.0em}
+
+% \cventry{}{}{Outstanding Book Award}{October 2018\vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% \begin{itemize}
+% \item Awarded for a well-written academic paper during an Model United Nations (MUN) conference
+% \end{itemize}}
+% \vspace{1.}
+
+
+
+% \cventry{}{}{Python}{ \vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% }
+% \vspace{-1.0em}
+% \cventry{}{}{Java}{ \vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% }
+% \vspace{-1.0em}
+% \cventry{}{}{HTML/CSS}{ \vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% }
+% \vspace{-1.0em}
+% \cventry{}{}{JavaScript}{ \vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% }
+% \vspace{-1.0em}
+% \cventry{}{}{Git}{ \vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% }
+% \vspace{-1.0em}
+% \cventry{}{}{Bash}{ \vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% }
+% \vspace{-1.0em}
+% \cventry{}{}{Haskell}{ \vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% }
+% \vspace{-1.0em}
+
+
+
+%\cventry{}{}{Peer Tutor}{Sept 2016 -- Present \vspace{-1.0em}}{}{
+% Detailed achievements:%
+%\begin{itemize}
+%\item Tutoring high school students in mathematics and science.
+%\item Meet with students multiple times weekly to explain concepts and answer questions.
+%\end{itemize}}
+
+% \vspace{1.0em}
+
+
+
+
+
+\end{document}
