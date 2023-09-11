@@ -21,7 +21,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 \usepackage{multicol}
 % adjust the page margins
-\usepackage[scale=0.75,top=0.5cm,bottom=0.5cm,left=1cm,right=1cm]{geometry}
+\usepackage[scale=0.75,top=0.5cm,bottom=0.5cm,left=1.5cm,right=1cm]{geometry}
 % Expand the width for \phone, \email, \linkedin, \github to be on one line
 \patchcmd{\makehead}% <cmd>
   {0.8\textwidth}% <search>
@@ -71,15 +71,18 @@
 
 
 \vspace*{-3.75em}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                               EDUCATION                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
-\cventry{}{}{Bachelor of Applied Science, Honours Computer Science Co-op}{September 2019 -- April 2023}{}{\vspace{-1.5em} {McMaster University, Hamilton ON}}{
+\cventry{}{}{Bachelor of Applied Science, Honours Computer Science Co-op}{September 2019 -- April 2024}{}{\vspace{-1.5em} \textit{McMaster University, Hamilton, ON}}{
 \vspace{-0.75em}
 \begin{small}
 \begin{itemize}
-    \item Currently enrolled in \textbf{level 3} of the \textbf{4-year} program with a cummulative \textbf{GPA} of \textbf{4.0} on a 4.0 scale
+    \item Currently enrolled in \textbf{level 5} of the \textbf{5-year} Computer Science co-op program with a cummulative \textbf{GPA} of \textbf{4.0} on a 4.0 scale
     \item Received the McMaster Start Coding's Honorarium for volunteering more than 40 hours with the organization
-    \item Awarded the McMaster President's Entrance Award for achieving an average over 95\% in high school
-    \item Rewarded the Outstanding Book Award for a well-written academic paper during a Model United Nations (MUN) conference in high school
+    % \item Awarded the McMaster President's Entrance Award for achieving an average over 95\% in high school
+    % \item Rewarded the Outstanding Book Award for a well-written academic paper during a Model United Nations (MUN) conference in high school
 \end{itemize}
 \end{small}
 
@@ -90,12 +93,13 @@
 \begin{small}
  \begin{multicols}{3}
     \begin{itemize}
-        \item Introduction to Programming \textbf{- Python}
-        \item Principle of Programming \textbf{- Java}
-        \item Databases - \textbf{DB2}
-        \item Introduction to Software Development
+        \item Algorithms and Complexity \textbf{(A+)}
         \item Discrete Math with Applications \textbf{(A+)}
-        \item Data Structures and Algorithms \textbf{(A+)}
+        \item Introduction to Software Development
+        \item Introduction to Programming - \textbf{Python}
+        \item Principle of Programming - \textbf{Java}
+        \item Databases - \textbf{SQL}
+
     \end{itemize}
  \end{multicols}
 \end{small}
@@ -113,58 +117,76 @@
 
 
 \vspace{-2.0em}
-%%%%%%%%%% Skills %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              SKILLS                                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Skills}
 \begin{small}
-Programming Language: Python, Java, Bash, Haskell, Javascript \\
-Software: Git, Pylint, Pytest, JUnit, Doxygen, Django, HTML, CSS \\
-Other: Word, Excel, Powerpoint
+Programming Language: Python, Java, Shell Scripting (Bash and ZSH), Haskell, Go, Javascript \\
+Software: Git, GitHub Actions, AWS, Docker, Kubernetes, Pylint, Pytest, JUnit, Doxygen, Django, HTML, CSS
+% Other: Word, Excel (with VBA), Powerpoint
 \end{small}
 
 
 \vspace{-1.0em}
-%%%%% Experience %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                            EXPERIENCE                                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
+
+\cventry{}{}{Software Engineering Intern (16-month Co-op Experience)}{May 2022 -- August 2023}{\hspace*{-2.5 mm} Sanofi Global Data and AI}{
+% Detailed achievements:%
+\begin{itemize}
+\item Extensively broadened software development and design thinking skills through developing and maintaining an internal platform using \textbf{FastAPI}, \textbf{Pydantic}, \textbf{SQLModel} and \textbf{microservices architecture} that supports hundreds of data scientists and MLOps engineers to research, develop and deploy AI models for healthcare purposes
+\item Actively learned and applied a wide range of the latest \textbf{cloud-native} technologies by developing the platform with Amazon Web Services (\textbf{AWS}), containerization platform (\textbf{Docker}), Kubernetes (\textbf{AWS EKS}), container registry (\textbf{AWS ECR})
+\item Exposed to \textbf{DevOps} process by maintaining and improving \textbf{CI/CD pipelines} using \textbf{GitHub Actions}, \textbf{ArgoCD}, \textbf{Helm}, \textbf{Terraform} and shell scripting (\textbf{Bash}) following \textbf{GitOps} approach
+\item Advanced \textbf{communication} and \textbf{collaboration} skills by replying to approximately \textbf{2000} emails from users, in a team of three support members and working with other developers in different time zones
+\item Exhibited \textbf{documentation} skill by creating training guides for new users and developers, documenting new and existing features, updating progress through Jira tickets
+\end{itemize}
+}
 
 \cventry{}{}{Undergraduate Teaching Assistant}{September 2021 -- December 2021}{\hspace*{-2.5 mm} Introduction to Computational Thinking}{
 % Detailed achievements:%
 \begin{itemize}
-\item Developed organization skills by preparing and conducting tutorials to assist students with their knowledge in \textbf{Haskell}
-\item Enhanced communication skills through consulting students on the course material using various communication channels, including emails and weekly office hours
-\item Conducted marking and provided feedback on student assignments, with approximately 200 submissions graded
-\item Exhibited time management skills by attending weekly meetings with the instructor to report current progress and discuss future work
+\item Developed \textbf{organization skills} by preparing and conducting tutorials to assist students with their knowledge in \textbf{Haskell}
+\item Enhanced \textbf{communication skills} through consulting students on the course material using various communication channels, including MS Teams, emails and weekly office hours
+% \item Conducted grading and provided feedback on student assignments, with approximately \textbf{200} submissions graded
+\item Exhibited \textbf{time management} skills by attending weekly meetings with the instructor to report current progress and discuss future work
 \end{itemize}
 }
 
 
 \vspace{-1.0em}
-%%%%%%%%%% Projects %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                  PROJECTS                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Projects}
 \cventry{}{}{\href{https://github.com/nguyen-gia-hien-tu/DDO_Vale_Puzzle}{DDO Vale Puzzle}}{July 2021 \vspace{-1.0em}}{}{
 \begin{itemize}
     \item Developed a logic puzzle game with a variety of board sizes from 3x3 to 9x9 using \textbf{Java}, \textbf{Swing} and \textbf{Launch4j}
-    \item Applied programming knowledge learned in class and self-educated knowledge to create the game
-    \item Improved knowledge on Object-Oriented Programming concept and problem solving skills after building the game
+    \item Applied and improved object-oriented programming knowledge learned in class and self-educated knowledge to create the game
 \end{itemize}
 }
 
 \cventry{}{}{\href{https://github.com/nguyen-gia-hien-tu/Sorting-Visualizer}{Sorting Visualizer}}{February 2021 \vspace{-1.0em}}{}{
 \begin{itemize}
     \item Designed a visualizer to visualize different sorting \textbf{algorithms} using \textbf{Python}
-    \item Utilized in-class knowledge in Python and algorithms as well as self-taught knowledge in \textbf{Pygame} and \textbf{PyInstall} to program and export the visualizer
+    \item Utilized in-class knowledge in Python and sorting algorithms as well as self-taught knowledge in \textbf{Pygame} and \textbf{PyInstall} to program the visualizer and export into an executable file
 \end{itemize}
 }
 
-\cventry{}{}{\href{https://macoutreach.rocks/share/14769912}{Covid-19 Awareness Game}}{March 2020 \vspace{-1.0em}}{}{
-\begin{itemize}
-    \item Collaborated in a group of 4 in McMaster Start Coding club to create a game to help raising the awareness of Covid-19
-    \item Built the game using the club website's tool, which is based on \textbf{Elm}
-\end{itemize}
-}
+% \cventry{}{}{\href{https://macoutreach.rocks/share/14769912}{Covid-19 Awareness Game}}{March 2020 \vspace{-1.0em}}{}{
+% \begin{itemize}
+%     \item Collaborated in a group of 4 in McMaster Start Coding club to create a game to help raising the awareness of Covid-19
+%     \item Built the game using the club website's tool, which is based on \textbf{Elm}
+% \end{itemize}
+% }
 
 
 \vspace{-0.75em}
-%%%%% Extracurricular Activities %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          EXTRACURRICULAR ACTIVITIES                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Extracurricular Activities}
 
 \cventry{}{}{Simple Type Theory - Volunteering Research Assistant}{May 2021 -- August 2021 \vspace{-1.0em}}{}{
@@ -184,14 +206,14 @@ Other: Word, Excel, Powerpoint
 \end{itemize}}
 % \vspace{1.0em}
 
-\cventry{}{}{Professional Development Committee – Member}{September 2019 -- December 2019 \vspace{-1.0em}}{}{
-% Detailed achievements:%
-\begin{itemize}
-\item Advanced organization skills by assisting in setting up LinkedIn photoshoot night
-\item Demonstrated communication skills through discussions on organizing the Carnival Event for McMaster Faculty of Engineering
-\item Volunteered in setting up the Engineering Event of the McMaster Faculty of Engineering
-\end{itemize}}
-% \vspace{1.0em}
+% \cventry{}{}{Professional Development Committee – Member}{September 2019 -- December 2019 \vspace{-1.0em}}{}{
+% % Detailed achievements:%
+% \begin{itemize}
+% \item Advanced organization skills by assisting in setting up LinkedIn photoshoot night
+% \item Demonstrated communication skills through discussions on organizing the Carnival Event for McMaster Faculty of Engineering
+% \item Volunteered in setting up the Engineering Event of the McMaster Faculty of Engineering
+% \end{itemize}}
+% % \vspace{1.0em}
 
 % \cventry{}{}{Model United Nations – General Delegate}{October 2018 -- April 2019 \vspace{-1.0em}}{}{
 % % Detailed achievements:%
@@ -202,7 +224,10 @@ Other: Word, Excel, Powerpoint
 
 
 % \vspace{-0.75em}
-%%%%%%%%%% Awards %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                    AWARDS                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AWARDS section is currently not being used
 % \section{Awards}
 
 % \cventry{}{}{McMaster Start Coding’s Honorarium}{April 2020\vspace{-1.0em}}{}{
@@ -224,8 +249,6 @@ Other: Word, Excel, Powerpoint
 % \item Awarded for a well-written academic paper during an Model United Nations (MUN) conference
 % \end{itemize}}
 % \vspace{1.}
-
-
 
 % \cventry{}{}{Python}{ \vspace{-1.0em}}{}{
 % % Detailed achievements:%
@@ -255,8 +278,6 @@ Other: Word, Excel, Powerpoint
 % % Detailed achievements:%
 % }
 % \vspace{-1.0em}
-
-
 
 %\cventry{}{}{Peer Tutor}{Sept 2016 -- Present \vspace{-1.0em}}{}{
 % Detailed achievements:%
